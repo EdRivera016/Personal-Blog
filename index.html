@@ -9,8 +9,11 @@
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
-<body>
-  <!-- side img -->
+<body class="lightmode">
+<header>
+  <h1 data-mode="lightmode" id="themechange">
+  </h1>
+</header>
   <main>
     <section class="hero">
       <h1>Welcome To Personal Blogs</h1>
@@ -19,7 +22,7 @@
     </section>
     <section class="image">
       <div>
-        <img src="image here">
+        <img src="">
       </div>
       <!--Form Section -->
       <article class="form">
@@ -41,12 +44,18 @@
             <textarea placeholder="What are your thoughts??" id="content" name="content"></textarea>
           </fieldset>
         </form>
+        <button id="submit-btn">Submit</button>
       </article>
     </section>
     <footer class="footer">
       &copy;2024 <a href="https://github.com/EdRivera016">EdRivera016</a>
     </footer>
+
   </main>
+
 </body>
+<script src="./assets/js/blog.js"></script>
+<script src="./assets/js/form.js"></script>
+<script src="./assets/js/logic.js"></script>
 
 </html>
