@@ -5,57 +5,42 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Personal Blog</title>
-  <link rel="stylesheet" href=".assets/css/form.css">
+  <link rel="stylesheet" href="./assets/css/form.css">
   <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body class="lightmode">
-<header>
-  <h1 data-mode="lightmode" id="themechange">
-  </h1>
-</header>
+  <header>
+    <h1 data-mode="lightmode" id="themechange"><i class="fa-solid fa-sun"></i></h1>
+  </header>
   <main>
     <section class="hero">
-      <h1>Welcome To Personal Blogs</h1>
-      <button id="toggle-button" type="button">Theme Mode</button>
-      <label for="toggle-button"></label>
-    </section>
-    <section class="image">
-      <div>
-        <img src="">
+      <div class="hero-sphere">
+        <h2>Welcome To Personal Blogs</h2>
       </div>
       <!--Form Section -->
-      <article class="form">
-        <h1>WHAT ARE YOUR THOUGHTS???</h1>
-        <form>
-          <fieldset>
-            <legend>Enter Your Username</legend>
-            <label class="label" for="userName">Username:</label><br>
-            <input placeholder="Your Username" type="text" id="userName" name="userName">
-          </fieldset>
-
-          <fieldset>
-            <label class="label" for="title">Title:</label>
-            <input placeholder="Title of your Blog" type="text" id="title" name="title">
-          </fieldset>
-
-          <fieldset>
-            <label class="label" for="content">Content:</label>
-            <textarea placeholder="What are your thoughts??" id="content" name="content"></textarea>
-          </fieldset>
+      <section class="form">
+        <h3>SHARE YOUR THOUGHTS???</h3>
+        <form id="blog-form">
+          <label for="userName">Username:</label><br>
+          <input placeholder="Your Username" type="text" id="userName" name="userName">
+          <label for="title">Title:</label>
+          <input placeholder="Title of your Blog" type="text" id="title" name="title">
+          <label for="content">Content:</label>
+          <textarea placeholder="What are your thoughts??" id="content" name="content"></textarea>
+          <button id="submit-btn">Submit</button>
         </form>
-        <button id="submit-btn">Submit</button>
-      </article>
-    </section>
-    <footer class="footer">
-      &copy;2024 <a href="https://github.com/EdRivera016">EdRivera016</a>
-    </footer>
+      </section>
+      <footer class="footer">
+        &copy;2024 <a href="https://github.com/EdRivera016">EdRivera016</a>
+      </footer>
 
   </main>
 
+  <script src="./assets/js/form.js"></script>
+  <script src="./assets/js/logic.js"></script>
+
 </body>
-<script src="./assets/js/blog.js"></script>
-<script src="./assets/js/form.js"></script>
-<script src="./assets/js/logic.js"></script>
 
 </html>

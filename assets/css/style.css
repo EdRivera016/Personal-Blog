@@ -1,12 +1,56 @@
+:root {
+    --lightmodebackground: #dfd7d7;
+    --lightmodetext: #000000;
+    --darkmodebackground: #101068;
+    --darkmodetext: #ffffff;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
- h1 
- {
-    background-color: brown;
+
+body {
+    background-color: var(--lightmodebackground);
 }
-button {
-    background-color:turquoise
+main {
+display: flex;
+flex-wrap: nowrap;
+justify-content: center;
+flex: 1 1 40vw;
+}
+section {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+.hero {
+display: flex;  
+align-items: center;
+justify-content: center;
+width: 50vw;
+height: 80vh;
+border: solid 5px;
+border-color: black;
+padding: 3.5vh;
+margin: .25rem;
+min-height: 400px;
+min-width: 375px;
+margin-top: .25rem;
+}
+.hero-sphere {
+height: 350px;
+width: 350px;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 50%;
+background: repeating-linear-gradient(45deg, #dfd7d7 ,#dfd7d7 10px, #d3d5d7 10px, #ded5d7 20px);
+}
+h2 {
+    color: var(--lightmodetext);
+    text-align: center;
+    font-size: 2em;
+    position: relative;
 }
