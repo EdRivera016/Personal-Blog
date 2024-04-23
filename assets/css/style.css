@@ -54,3 +54,31 @@ h2 {
     font-size: 2em;
     position: relative;
 }
+
+#username,
+#title,
+#content {
+    width: 10em;
+    font-size: 1.5em;
+    height: fit-content;
+}
+
+button {
+    background-color: #484747;
+    color: #ffffff;
+    border-radius: 0.rem;
+    padding: 0.5em;
+    margin-top: 0.5em;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1em;
+    text-transform: uppercase;
+}
+button:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+.light {
+    background-color: var(--lightmodebackground);
+    color: var(--lightmodetext);
+}
