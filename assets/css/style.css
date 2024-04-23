@@ -5,7 +5,7 @@
     --darkmodetext: #ffffff;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -14,40 +14,45 @@
 body {
     background-color: var(--lightmodebackground);
 }
+
 main {
-display: flex;
-flex-wrap: nowrap;
-justify-content: center;
-flex: 1 1 40vw;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    flex: 1 1 40vw;
 }
+
 section {
     width: 45%;
     display: flex;
     flex-direction: column;
 }
+
 .hero {
-display: flex;  
-align-items: center;
-justify-content: center;
-width: 50vw;
-height: 80vh;
-border: solid 5px;
-border-color: black;
-padding: 3.5vh;
-margin: .25rem;
-min-height: 400px;
-min-width: 375px;
-margin-top: .25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+    height: 80vh;
+    border: solid 5px;
+    border-color: black;
+    padding: 3.5vh;
+    margin: .25rem;
+    min-height: 400px;
+    min-width: 375px;
+    margin-top: .25rem;
 }
+
 .hero-sphere {
-height: 350px;
-width: 350px;
-display: flex;
-justify-content: center;
-align-items: center;
-border-radius: 50%;
-background: repeating-linear-gradient(45deg, #dfd7d7 ,#dfd7d7 10px, #d3d5d7 10px, #ded5d7 20px);
+    height: 350px;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: repeating-linear-gradient(45deg, #ecb229, #951515 10px, #ffffff 10px, #ded5d7 20px);
 }
+
 h2 {
     color: var(--lightmodetext);
     text-align: center;
@@ -74,11 +79,66 @@ button {
     font-size: 1em;
     text-transform: uppercase;
 }
+
 button:hover {
     background-color: #000000;
     color: #ffffff;
 }
+
 .light {
     background-color: var(--lightmodebackground);
     color: var(--lightmodetext);
+    height: 100vh;
+}
+
+.light h4 {
+    color: var(--lightmodebackground);
+    text-align: left;
+    font-size: 2.5em;
+    position: relative;
+    padding: 5px;
+    text-transform: uppercase;
+}
+
+.light .hero-sphere {
+background: repeating-linear-gradient(45deg, #ecb229, #951515 10px, #ffffff 10px, #ded5d7 20px);
+}
+
+.dark {
+    background-color: var(--darkmodebackground);
+    color: var(--darkmodetext);
+    height: 100vh;
+}
+
+.dark h2 {
+    color: var(--darkmodebackground);
+    color: var(--darkmodetext);
+    font-size: 2em;
+    position: relative;
+}
+
+.dark h4 {
+    color: var(--darkmodetext);
+    text-align: left;
+    font-size: 2.5em;
+    position: relative;
+    padding: 5px;
+    text-transform: uppercase;
+}
+
+.dark .hero-sphere {
+    background-color: repeating-linear-gradient(45deg, #31363f, #31363f 10px, #0a07da, 10px, #0a07da 20px);
+}
+
+.dark .backbutton {
+    background-color: #000000;
+    color: #f1f8ff;
+}
+.dark .backbutton:hover {
+    background-color: #000000;
+    cursor: pointer;
+}
+
+.dark a {
+    color: var(--darkmodetext);
 }
