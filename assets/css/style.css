@@ -32,7 +32,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50vh;
+    width: 45%;
     height: 80vh;
     border: solid 5px;
     border-color: black;
@@ -79,11 +79,12 @@ h2 {
 #title,
 #content {
     width: 10em;
-    font-size: 1.5em;
+    font-size: 2em;
     height: fit-content;
 }
 
 button {
+    justify-content: flex-end;
     background-color: #484747;
     color: #ffffff;
     border-radius: 0.rem;
