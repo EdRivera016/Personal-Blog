@@ -1,0 +1,31 @@
+header {
+    padding: 1em;
+    border-bottom: solid 5px;
+    border-color: black;
+    text-align: right;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    outline: solid 5px;
+    outline-offset: 5px;
+    outline-color: black;
+}
+
+h1 {
+    cursor: pointer;
+    font-size: medium;
+    order: 2;
+}
+
+h2 {
+    text-align: left;
+    font-size: medium;
+}
+
+h4 {
+    text-align: left;
+    font-size: 2.3rem;
+    position: relative;
+    text-transform: uppercase;
+}
