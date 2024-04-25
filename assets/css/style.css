@@ -1,7 +1,7 @@
 :root {
     --lightmodebackground: #dfd7d7;
     --lightmodetext: #000000;
-    --darkmodebackground: #101068;
+    --darkmodebackground: #241c49;
     --darkmodetext: #ffffff;
 }
 
@@ -65,7 +65,7 @@ section {
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    background: repeating-linear-gradient(45deg, #ecb229, #951515 10px, #ffffff 10px, #ded5d7 20px);
+    background: repeating-linear-gradient(45deg, #f7f7f6, #951515 10px, #ffffff 10px, #ded5d7 20px);
 }
 
 h2 {
