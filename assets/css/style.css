@@ -1,8 +1,8 @@
 :root {
-    --lightmodebackground: #dfd7d7;
-    --lightmodetext: #000000;
+    --lightmodebackground: #dbdbdb;
+    --lightmodetext: #ffffff;
     --darkmodebackground: #241c49;
-    --darkmodetext: #ffffff;
+    --darkmodetext: #000000;
 }
 
 * {
@@ -65,7 +65,7 @@ section {
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    background: repeating-linear-gradient(45deg, #f7f7f6, #951515 10px, #ffffff 10px, #ded5d7 20px);
+    background: repeating-linear-gradient(45deg, #0c0c0c, #481e14 10px, #9b3922, 10px, #f2613f 20px);
 }
 
 h2 {
@@ -74,12 +74,12 @@ h2 {
     font-size: 2em;
     position: relative;
 }
-
+ 
 #username,
 #title,
 #content {
     width: 10em;
-    font-size: 2em;
+    font-size: 1.7em;
     height: fit-content;
 }
 
@@ -103,8 +103,12 @@ button:hover {
 
 .light {
     background-color: var(--lightmodebackground);
-    color: var(--lightmodetext);
+    color: var(--darkmodetext);
     height: 100vh;
+}
+
+.light h2, h3 {
+    color: var(--darkmodetext);
 }
 
 .light h4 {
@@ -117,7 +121,7 @@ button:hover {
 }
 
 .light .hero-sphere {
-background: repeating-linear-gradient(45deg, #ecb229, #951515 10px, #ffffff 10px, #ded5d7 20px);
+background: repeating-linear-gradient(45deg, #F16A70, #81d877 10px, #8CDCDA 10px, #4D4D4D 20px);
 }
 
 .dark {
@@ -127,14 +131,17 @@ background: repeating-linear-gradient(45deg, #ecb229, #951515 10px, #ffffff 10px
 }
 
 .dark h2 {
-    color: var(--darkmodebackground);
-    color: var(--darkmodetext);
+    color: var(--lightmodetext);
     font-size: 2em;
     position: relative;
 }
 
+.dark h3 {
+    color: var(--lightmodetext);
+}
+
 .dark h4 {
-    color: var(--darkmodetext);
+    color: white;
     text-align: left;
     font-size: 2.5em;
     position: relative;
@@ -142,9 +149,9 @@ background: repeating-linear-gradient(45deg, #ecb229, #951515 10px, #ffffff 10px
     text-transform: uppercase;
 }
 
-.dark .hero-sphere {
-    background-color: repeating-linear-gradient(45deg, #31363f, #31363f 10px, #0a07da, 10px, #0a07da 20px);
-}
+/* .dark .hero-sphere {
+    background-color: repeating-linear-gradient(45deg, #000000, #3D0000 10px, #950101, 10px, #ff0000 20px);
+} */
 
 .dark .backbutton {
     background-color: #000000;

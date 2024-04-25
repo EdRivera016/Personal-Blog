@@ -16,11 +16,12 @@ if (validateInput()) {
 
 //validate user input 
 const validateInput = () => {
-    if (usernameEl.ariaValueMax.trim() === `` || titleEl.ariaValueMax.trim() === ``) {
-        alert('Please enter all data!');
-        return false;
-    }
-    return true;
+    console.log('Validatin Input...')
+//     if (usernameEl.value.trim() === `` || titleEl.value.trim() === ``) {
+//         alert('Please enter all data!');
+//         return false;
+//     }
+//     return true;
 };
 
 //save post to localstorage
@@ -34,7 +35,7 @@ const savePost = () => {
     let blogPosts = JSON.parse(localStorage.getItem('blogPosts')) || [];
     blogPosts.push(blogInput);
 
-    localStorage.setItem('blogPosts', Json.stringify(blogPosts));
+    localStorage.setItem('blogPosts', JSON.stringify(blogPosts));
     console.log('post saved to local storage!');
 
     window.location.href = 'blog.html';
