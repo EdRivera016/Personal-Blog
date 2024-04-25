@@ -31,3 +31,8 @@ blogMain.appendChild(li);
 function renderAllBlogPost() {
     const blogPosts = JSON.parse(localStorage.getItem('blogposts'))
 }
+
+
+// finish code for blog post 
+//finish readme 
+//try to fix alert

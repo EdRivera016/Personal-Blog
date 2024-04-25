@@ -17,11 +17,11 @@ if (validateInput()) {
 //validate user input 
 const validateInput = () => {
     console.log('Validatin Input...')
-//     if (usernameEl.value.trim() === `` || titleEl.value.trim() === ``) {
-//         alert('Please enter all data!');
-//         return false;
-//     }
-//     return true;
+    if (usernameEl.value.trim() === `` || titleEl.value.trim() === ``) {
+        alert('Please enter all data!');
+        return false;
+    }
+    return true;
 };
 
 //save post to localstorage
@@ -40,3 +40,6 @@ const savePost = () => {
 
     window.location.href = 'blog.html';
 };
+
+
+
