@@ -30,9 +30,25 @@ blogMain.appendChild(li);
 //function to render all blog posts
 function renderAllBlogPost() {
     const blogPosts = JSON.parse(localStorage.getItem('blogposts'))
+
+    if (blogPosts) {
+        blogPosts.forEach(blog => {
+            renderBlogPost(blog);
+        });
+    }
 }
 
+// event listener for back button 
+backButtonLink.addEventListener('click', handleBackButtonClick);
 
-// finish code for blog post 
+//initialize the page 
+function init() {
+    renderAllBlogPosts();
+}
+
+//call the init function when the page is loaded 
+document.addEventListener('DOMContentLoaded', init);
+
+
 //finish readme 
 //try to fix alert
