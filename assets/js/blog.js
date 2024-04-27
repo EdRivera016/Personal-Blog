@@ -1,11 +1,8 @@
+document.addEventListener('DOMContentLoaded', () => {
+
 //define varieables
-const backButtonLink = document.getElementById("back-button");
 const blogMain = document.getElementById("blog");
 
-//function to handle back button click
-function handleBackButtonClick() {
-    window.location.href = 'index.html';
-}
 //function to render a single blog post
 function renderBlogPost(blog, index) {
     const li = document.createElement('li');
@@ -38,18 +35,20 @@ function renderAllBlogPost() {
 }
 
 // event listener for back button 
-document.addEventListener('DOMContentLoaded', function () {
-    backButtonLink.addEventListener('click', handleBackButtonClick)
-});
+const backButtonLink = document.getElementById("back-button");
+     if (backButtonLink) {
+        backButtonLink.addEventListener('click', () => {
+            window.location.href = 'index.html';
+        });
+    }
 
 //initialize the page 
 function init() {
     renderAllBlogPost();
 }
 
-//call the init function when the page is loaded 
-document.addEventListener('DOMContentLoaded', init);
+// //call the init function when the page is loaded 
+// document.addEventListener('DOMContentLoaded', init);
 
-
+});
 //finish readme
-//try to fix alert
