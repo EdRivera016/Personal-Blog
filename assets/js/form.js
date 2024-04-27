@@ -4,11 +4,10 @@ const titleEl = document.getElementById("title");
 const contentEl = document.getElementById("content");
 
 //collect submit button element
-const subtmitButton = document.getElementById("submit-btn");
+const submitButton = document.getElementById("submit-btn");
 
 // add event listener to submit button 
 const attachSubmitListener = () => {
-    submitButton.removeEventListener("click", submitHandler);
     submitButton.addEventListener("click", submitHandler);
 };
 
@@ -26,7 +25,7 @@ const handlePageLoad = () => {
     attachSubmitListener();
 };
 // call handlePageLoad when the page loads
-window.addEventListener('load', 'handlePageLoad');
+window.addEventListener('load', handlePageLoad);
 
 //validate user input 
     const validateInput = () => {
