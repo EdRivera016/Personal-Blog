@@ -1,7 +1,7 @@
 :root {
     --lightmodebackground: #dbdbdb;
     --lightmodetext: #ffffff;
-    --darkmodebackground: #241c49;
+    --darkmodebackground: #2c1887;
     --darkmodetext: #000000;
 }
 
@@ -67,8 +67,8 @@ section {
     border-radius: 50%;
     background: repeating-linear-gradient(45deg, #0c0c0c, #481e14 10px, #9b3922, 10px, #f2613f 20px);
 }
-
-/* h1 {
+/* 
+h1 {
     position: relative;
     text-align: right;
     padding-left: 85%;
