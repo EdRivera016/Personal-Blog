@@ -7,7 +7,7 @@
 
 * {
     margin: 0;
-    padding: 0;
+    padding: 0.2%;
     box-sizing: border-box;
 }
 
@@ -68,18 +68,32 @@ section {
     background: repeating-linear-gradient(45deg, #0c0c0c, #481e14 10px, #9b3922, 10px, #f2613f 20px);
 }
 
+/* h1 {
+    position: relative;
+    text-align: right;
+    padding-left: 85%;
+
+} */
+
 h2 {
     color: var(--lightmodetext);
     text-align: center;
     font-size: 2em;
     position: relative;
 }
- 
+
+h4 {
+    text-align: left;
+    font-size: 2.3rem;
+    position: relative;
+    text-transform: uppercase;
+}
+
 #username,
 #title,
 #content {
     width: 10em;
-    font-size: 1.7em;
+    font-size: 1.8em;
     height: fit-content;
 }
 
@@ -107,12 +121,13 @@ button:hover {
     height: 100vh;
 }
 
-.light h2, h3 {
+.light h2,
+h3 {
     color: var(--darkmodetext);
 }
 
 .light h4 {
-    color: var(--lightmodebackground);
+    color: var(--darkmodetext);
     text-align: left;
     font-size: 2.5em;
     position: relative;
@@ -121,7 +136,7 @@ button:hover {
 }
 
 .light .hero-sphere {
-background: repeating-linear-gradient(45deg, #F16A70, #81d877 10px, #8CDCDA 10px, #4D4D4D 20px);
+    background: repeating-linear-gradient(45deg, #F16A70, #81d877 10px, #8CDCDA 10px, #4D4D4D 20px);
 }
 
 .dark {
@@ -149,14 +164,12 @@ background: repeating-linear-gradient(45deg, #F16A70, #81d877 10px, #8CDCDA 10px
     text-transform: uppercase;
 }
 
-/* .dark .hero-sphere {
-    background-color: repeating-linear-gradient(45deg, #000000, #3D0000 10px, #950101, 10px, #ff0000 20px);
-} */
 
 .dark .backbutton {
     background-color: #000000;
     color: #f1f8ff;
 }
+
 .dark .backbutton:hover {
     background-color: #000000;
     cursor: pointer;
