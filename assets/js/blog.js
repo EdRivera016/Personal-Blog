@@ -52,4 +52,3 @@ document.addEventListener('DOMContentLoaded', () => {
     // document.addEventListener('DOMContentLoaded', init);
 
 });
-//finish readme
