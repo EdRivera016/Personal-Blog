@@ -1,3 +1,4 @@
+// Event listener to ensure the DOM content is fully loaded
 document.addEventListener('DOMContentLoaded', () => {
 
     //define varieables
@@ -33,6 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
     }
+    //render all blog posts when the  page loads
     renderAllBlogPost();
 
     // event listener for back button 
@@ -47,8 +49,4 @@ document.addEventListener('DOMContentLoaded', () => {
     function init() {
         renderAllBlogPost();
     }
-
-    // //call the init function when the page is loaded 
-    // document.addEventListener('DOMContentLoaded', init);
-
 });
